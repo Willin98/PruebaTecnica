@@ -1,0 +1,19 @@
+<h2>lista de Productos</h2>
+<table class="table table-striped">
+  <thead class="table-dark">
+    <tr>
+      <th>Id</th>
+      <th>nombre</th>
+      <th>precio</th>
+      <th>stock</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let producto of productos">
+        <td>{{producto.id_producto}}</td>
+        <td>{{producto.nombre}}</td>
+        <td>{{producto.precio}}</td>
+        <td>{{producto.stock}}</td>
+    </tr>
+  </tbody>
+</table>

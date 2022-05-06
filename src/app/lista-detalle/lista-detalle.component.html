@@ -1,0 +1,18 @@
+<h2>lista de facturas</h2>
+<table class="table table-striped">
+  <thead class="table-dark">
+    <tr>
+      <th>Id</th>
+      
+      <th>cantidad</th>
+      <th>precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let factura of facturas">
+        <td>{{factura.num_detalle}}</td>
+        <td>{{factura.cantidad}}</td>
+        <td>{{factura.precio}}</td>
+    </tr>
+  </tbody>
+</table>
